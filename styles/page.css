@@ -1,0 +1,39 @@
+header, footer {
+    background-color: rgb(4, 34, 8);
+    color : rgb(207, 216, 208);
+    margin : 15px 0px;
+    height : 10%;
+    font-weight: bold;
+    text-align : center; 
+    padding: 30px;
+}
+body {
+    background-color: rgb(207, 216, 208);
+    padding: 5px;
+}
+html {
+    padding: 10px 50px;
+    background-color: rgb(207, 216, 208);
+    font-family:'Gill Sans';
+}
+
+/*table CSS start*/
+tr, th, td, .cells input {
+    border: 1px solid white;
+    width: 130px;
+    justify-content: center;
+    height: 30px;
+}
+th {
+    background-color: rgb(68, 95, 68);
+    color: white;
+}
+table {
+    border: 1px dotted rgb(4, 36, 9);
+    background-color: white;
+    width: 100%;
+}
+table tr:nth-child(odd) {
+    background-color: lightgray;
+}
+/*table CSS end*/

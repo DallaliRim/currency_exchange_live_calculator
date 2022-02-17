@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Assignmen 2- Exchange Rate</title>
+		<link rel="stylesheet" href='styles/page.css'>
+		<link rel="stylesheet" href='styles/formStyle.css'>
+		<script src='js/exchange_rate.js'> </script>
+		<script src='js/utilities.js'> </script>
+		<script src='js/main_program.js'> </script>
+		<title>Exchange Rate</title>
+		<!-- <script defer> </script> -->
+	</head>
+	<body>
+		<section id='main_container'>
+			<header>
+				<h2> Currency Exchange Live Calculator </h2>
+				<p> 420-320 Assignment 2 </p>
+			</header>
+			<section id='main-container'>
+				<section id='top-section'>
+					<form action="" method="get">
+						<fieldset>
+							<legend>Fill In All required fields</legend>
+							<section id="selection-section">
+								<section class='form-row'>
+									<label for="base_currency_select" id="label">Base Currency</label>
+									<select name="to_currency" id="base_currency_select">
+										<!-- rest of the options are added dynamicaly -->
+									</select>
+								</section>
+								<section class='form-row'>
+									<label for="to_currency_select">To Currency</label>
+									<select name="to_currency" id="to_currency_select">
+										<!-- rest of the options are added dynamicaly -->
+									</select>
+								</section>
+								<section class='form-row'>
+									<label for="amount">Amount</label>
+									<input type="number" name="amount" id="amount" min=1.00 max=999999999999.99 default=0>
+								</section>
+							</section>
+							<section id="button-section">
+								<section class='form-btn-row'>
+									<input type="button" id='get_data_btn' value="Convert">
+								</section>
+							</section>
+						</fieldset>
+					</form>
+				</section>
+				<section id='table-section'>
+					<table id="table">
+						<tr>
+							<th>from</th>
+							<th>to</th>
+							<th>rate</th>
+							<th>amount</th>
+							<th>payment</th>
+							<th>date</th>
+						</tr>
+						<!-- here, the table for currency conversions  will be generated and shown dynamically . -->
+					</table>
+				</section>
+			</section>
+			<footer>
+				<p> Dallali, Rim (1937259), 00004 , copyright Fall 2021
+
+				</p>
+			</footer>
+		</section>
+	</body>
+</html>
